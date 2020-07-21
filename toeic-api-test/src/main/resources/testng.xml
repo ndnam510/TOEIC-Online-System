@@ -1,10 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="TestAll">
-    <test name="case1">
+    <test name="casel">
         <classes>
-            <class name="vn.myclass.api.test.LoginTest"/>
-            <class name="vn.myclass.api.test.ListenGuidelineTest"/>
-            <class name="vn.myclass.api.test.reviewHashMap"/>
+            <class name="wad.project.api.test.LoginTest"/>
+            <class name="wad.project.api.test.ListenGuidelineTest"/>
         </classes>
     </test>
 </suite>

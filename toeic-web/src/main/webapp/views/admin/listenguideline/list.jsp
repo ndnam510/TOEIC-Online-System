@@ -129,9 +129,9 @@
 </div>
 <script>
     $(document).ready(function () {
-         $('#btnSearch').click(function () {
-             $('#formUrl').submit();
-         });
+        $('#btnSearch').click(function () {
+            $('#formUrl').submit();
+        });
     });
     function warningBeforeDelete() {
         showAlertBeforeDelete(function () {

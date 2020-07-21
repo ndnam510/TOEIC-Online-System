@@ -5,19 +5,14 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.password">1234</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/toeiconline?autoReconnect=true&amp;characterEncoding=utf-8&amp;useUnicode=true&amp;connectionCollation=utf8_unicode_ci&amp;characterSetResults=utf8</property>
+        <property name="hibernate.connection.password">1437</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/toeiconline</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">true</property>
-        <mapping class="vn.myclass.core.persistence.entity.RoleEntity" />
-        <mapping class="vn.myclass.core.persistence.entity.UserEntity" />
-        <mapping class="vn.myclass.core.persistence.entity.CommentEntity"/>
-        <mapping class="vn.myclass.core.persistence.entity.ListenGuidelineEntity"/>
-        <mapping class="vn.myclass.core.persistence.entity.ExaminationEntity"/>
-        <mapping class="vn.myclass.core.persistence.entity.ExaminationQuestionEntity"/>
-        <mapping class="vn.myclass.core.persistence.entity.ExerciseEntity"/>
-        <mapping class="vn.myclass.core.persistence.entity.ExerciseQuestionEntity"/>
-        <mapping class="vn.myclass.core.persistence.entity.ResultEntity"/>
+        <mapping class="wad.project.core.persistence.entity.RoleEntity" />
+        <mapping class="wad.project.core.persistence.entity.UserEntity" />
+        <mapping class="wad.project.core.persistence.entity.CommentEntity" />
+        <mapping class="wad.project.core.persistence.entity.ListenGuidelineEntity" />
     </session-factory>
 </hibernate-configuration>

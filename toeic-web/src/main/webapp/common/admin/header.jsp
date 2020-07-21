@@ -22,7 +22,7 @@
 
                     </a>
                 <li class="light-blue dropdown-modal">
-                    <c:url var="logoutUrl" value="/logout.html">
+                    <c:url var="logoutUrl" value="#">
                         <c:param name="action" value="logout"/>
                     </c:url>
                     <a href="${logoutUrl}">

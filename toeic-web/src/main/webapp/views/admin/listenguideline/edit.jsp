@@ -72,7 +72,7 @@
                                 <c:if test="${not empty item.pojo.content}">
                                     <c:set var="content" value="${item.pojo.content}"/>
                                 </c:if>
-                                <textarea name="pojo.content" cols="80" rows="10" id="ListenGuidelineContent">${content}</textarea>
+                                <textarea name="pojo.content" cols="80" rows="10" id="listenGuidelineContent">${content}</textarea>
                             </div>
                         </div>
                         <div class="form-group">
@@ -92,11 +92,10 @@
 <script>
     var listenGuidelineId = '';
     <c:if test="${not empty item.pojo.listenGuidelineId}">
-        listenGuidelineId = ${item.pojo.listenGuidelineId};
+    listenGuidelineId = ${item.pojo.listenGuidelineId};
     </c:if>
     $(document).ready(function () {
-        var editor = CKEDITOR.replace( 'ListenGuidelineContent' );
-        CKFinder.setupCKEditor( editor, '/ckfinder/' );
+        CKEDITOR.replace('listenGuidelineContent');
         validateData();
         $('#uploadImage').change(function () {
             readURL(this, "viewImage");
@@ -122,9 +121,9 @@
                 }
             });
         }
-        $("#ListenGuidelineContent").rules( "add", {
+        $("#listenGuidelineContent").rules( "add", {
             required: function () {
-                CKEDITOR.instances.ListenGuidelineContent.updateElement();
+                CKEDITOR.instances.listenGuidelineContent.updateElement();
             },
             messages: {
                 required: '<fmt:message key="label.empty" bundle="${lang}"/>'
