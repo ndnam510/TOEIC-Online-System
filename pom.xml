@@ -33,7 +33,7 @@
         <testng.version>6.8.7</testng.version>
         <sitemesh.version>2.4.2</sitemesh.version>
         <jstl.version>1.2</jstl.version>
-        <beanutils.version>1.9.3</beanutils.version>
+        <beanutils.version>1.9.4</beanutils.version>
         <displaytag.version>1.2</displaytag.version>
     </properties>
 
